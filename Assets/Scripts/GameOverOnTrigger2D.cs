@@ -38,7 +38,7 @@ public class GameOverOnTrigger2D : MonoBehaviour
             livesText.text = "Lives : " + lives.ToString();
             Destroy(other.gameObject);
             this.player.gameObject.SetActive(false);
-            
+
             if (this.lives <= 0)
             {
                 gameOverText.gameObject.SetActive(true);
